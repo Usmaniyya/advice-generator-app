@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;800&display=swap');
+:root {
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--dark-blue);
+}
+
+img {
+    width: 100%;
+}
+
+#desktop {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+#mobile {
+    display: none;
+    margin-bottom: 2rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 375px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    text-align: center;
+    background-color: var(--dark-grayish-blue);
+    color: #fff;
+    border-radius: 15px;
+}
+
+.card p {
+    color: var(--neon-green);
+    font-weight: 200;
+    letter-spacing: .4rem;
+    text-transform: uppercase;
+    margin-bottom: .75rem;
+}
+
+.card q {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-bottom: .75rem;
+}
+
+.card button {
+    width: 15%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: .75em;
+    border-radius: 50%;
+    background-color: var(--neon-green);
+    color: var(--light-cyan);
+    transition: all 0.15s ease-in-out;
+    margin: 0 auto;
+}
+
+button:hover,
+button:focus {
+    box-shadow: 0 0 2rem var(--neon-green);
+}
+
+button:active {
+    box-shadow: 0 0 4rem var(--neon-green);
+}
